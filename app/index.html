@@ -26,10 +26,21 @@
     <!--[if IE]>
       <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
     <![endif]-->
-    
     <div class="container-fluid">
       <div class="header">
         <div class="platform"></div>
+        <div class="console-panel">
+          <p>JSconsole</p>
+        </div>
+      </div>
+      <div class="nav">
+        <ul>
+          <li><a href="#js-demo">DEMO</a></li>
+          <li><a href="#js-docs">DOCS</a></li>
+          <li><a target="_blank" href="https://chrome.google.com/webstore/detail/sum-it-up/mdlhkbegjonbfnldpboohgfdapnpbhgl">DOWNLOAD</a></li>
+        </ul>
+      </div>
+      <div class="container">
         <div class="jet-pack">
           <div class="jet-body">
             <span class="jet-wing-top-circle"></span>
@@ -40,26 +51,42 @@
             <span class="flag"></span>
           </div>
         </div>
-        <div class="console-panel">
-          <p>JSconsole</p>
+        <div class="row">
+            <div class="col s12">
+                <h1 class=""> 
+                  A chrome extension to save context and help developers to experiment with JS in their favourite ❤️ chrome developer console.
+                </h2>
+            </div>
         </div>
       </div>
-      <div>
-        <div class="demo">
-          <h1 class="demo__heading">
-            LIVE DEMO
-          </h1>
-          <textarea class="console" name="" id="js-console" placeholder=">_" rows="20"></textarea>
-        </div>
-        <div class="button-container">
-          <button class="download-button" onclick="this.blur();window.open('https://chrome.google.com/webstore/detail/sum-it-up/mdlhkbegjonbfnldpboohgfdapnpbhgl', '_blank');">
-          Download Now for Chrome
+      <div id="js-demo" class="demo">
+        <h1 class="text-center">
+          LIVE DEMO
+        </h1>
+        <textarea class="console" name="" id="js-console" placeholder=">_" rows="20"></textarea>
+      </div>
+      <div class="button-container">
+        <button class="download-button" onclick="this.blur();window.open('https://chrome.google.com/webstore/detail/sum-it-up/mdlhkbegjonbfnldpboohgfdapnpbhgl', '_blank');">
+        Download Now for Chrome
         </button>  
-        </div>
+      </div>
+      <div id="js-docs" class="docs">
+        <h1 class="text-center">
+          USER GUIDE
+        </h1>
+        <div>js.load(NAME): Load the library from the internal CDN.</div>
+        <div>js.load(NAME, URL): Load the library from the given URL.</div>
+        <div>js.find(NAME): Search all the libraries with the given name. And display the list.</div>
+        <div>js.doc: BASIC Documentation for this Extension!!!!!</div>
       </div>
     </div>
+    <div class="button-container">
+        <button class="download-button" onclick="this.blur();window.open('https://chrome.google.com/webstore/detail/sum-it-up/mdlhkbegjonbfnldpboohgfdapnpbhgl', '_blank');">
+        Download Now for Chrome
+        </button>  
+      </div>
     <div class="footer">
-        This beautiful ❤️ is build by <a class="white-text" href="https://twitter.com/squiroid" target="_blank">Squiroid</a> @JSConsole 2017.
+        This beautiful ❤️ is build by <a class="white-text" href="https://twitter.com/squiroid" target="_blank">Squiroid</a> @JSconsole 2017.
     </div>
     <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
     <script>
@@ -74,8 +101,7 @@
     <!-- build:js scripts/vendor.js -->
     <!-- bower:js -->
     <script src="/bower_components/jquery/dist/jquery.js"></script>
-    <script src="/bower_components/tether/dist/js/tether.js"></script>
-    <script src="/bower_components/modernizr/modernizr.js"></script>
+
     <!-- endbower -->
     <!-- endbuild -->
     

@@ -1,18 +1,18 @@
 .jet-pack {
   display: block;
   font-size: 1rem;
-  left: 15%;
+  right: 1%;
   position: absolute;
   text-align: center;
-  top: 280px;
+  top: 10px;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
 }
 @media only screen and (max-width : 992px) {
     .jet-pack{
-      top: 250px;
-      right: 15%;
-      left: initial;
+      z-index: -1;
+      right: 1%;
+      top: -200px;
     }
 }
 @media (max-width: 500px) {
@@ -116,7 +116,7 @@
 .jet-wing-top-circle:before, .jet-wing-top-circle:after {
   border-bottom: .3em solid transparent;
   border-top: 1.5em solid transparent;
-  border-right: 1.8em solid #fff;
+  border-right: 1.8em solid #ff3d2f;
   content: "";
   height: 0;
   left: -1.9em;
@@ -129,7 +129,7 @@
 .jet-wing-top-circle:after {
   border-bottom: .3em solid transparent;
   border-top: 1.5em solid transparent;
-  border-left: 1.8em solid #fff;
+  border-left: 1.8em solid #ff3d2f;
   border-right: 0;
   left: auto;
   right: -1.9em;
@@ -173,8 +173,8 @@
   left: -1em;
   position: absolute;
   width: 3em;
-  -webkit-animation: smoke-animation 0.3s linear infinite alternate-reverse;
-  animation: smoke-animation 0.3s linear infinite alternate-reverse;
+  -webkit-animation: smoke-animation 0.1s linear infinite alternate-reverse;
+  animation: smoke-animation 0.1s linear infinite alternate-reverse;
 }
 .smoke-bubble:after {
   bottom: -.25em;
@@ -198,7 +198,7 @@
 .needle {
   border-left: 1em solid transparent;
   border-right: 1em solid transparent;
-  border-bottom: 2.1em solid #fff;
+  border-bottom: 2.1em solid #c32126;
   height: 0;
   left: 50%;
   position: absolute;

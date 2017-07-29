@@ -1,11 +1,11 @@
+*{
+  font-family: 'Orbitron', sans-serif;
+};
 // bower:scss
 @import "bower_components/bootstrap/scss/bootstrap.scss";
 // endbower
 @import "./rocket.scss";
 @import "./download.scss";
-*{
-  font-family: 'Orbitron', sans-serif;
-}
 body{
   background: whitesmoke;
 }
@@ -71,11 +71,17 @@ body{
     }
   }
 }
-.demo{
-  padding: 50px;
-  .demo__heading{
-    text-align: center;
+@media only screen and (max-width : 480px) {
+  .console-panel{
+    p {
+      font-size: 20px;
+      padding: 90px 0px;
+      line-height: 40px;
+    }
   }
+}
+.demo{
+  padding: 40px 10px 10px;
   .console{
     font-family: "Lucida Sans Typewriter", "Lucida Console", Monaco, "Bitstream Vera Sans Mono", monospace;
     color: black;
@@ -83,4 +89,48 @@ body{
     border: 5px solid #ccc;
     width: 100%;
   } 
+}
+.docs{
+  padding: 10px;
+  *:not(h1) {
+    font-family: sans-serif;
+  }
+  div{
+    color:#107896;
+    font-size: 20px;
+  }
+}
+.nav {
+  margin: 0;
+  padding: 0;
+  background: transparent;
+  overflow: hidden;
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 20px;
+  ul {
+    list-style: none;
+    text-align: center;
+    overflow: hidden;
+    
+    li {
+      display: inline-block;
+      margin: 0 -4px;
+      padding: 5px 0;
+    
+      a {
+        padding: 5px 20px;
+        font: 15px;
+        color: white;
+        text-decoration: none;
+        text-transform: uppercase;
+        
+        &:hover,
+        &.active {
+          color: black;
+        }
+      }
+    }
+  }
 }
