@@ -1,0 +1,86 @@
+// bower:scss
+@import "bower_components/bootstrap/scss/bootstrap.scss";
+// endbower
+@import "./rocket.scss";
+@import "./download.scss";
+*{
+  font-family: 'Orbitron', sans-serif;
+}
+body{
+  background: whitesmoke;
+}
+.header{
+  height: 660px;
+}
+.footer{
+  padding: 30px;
+  text-align: center;
+}
+.platform{
+  content: "";
+    width: 100%;
+    height: 660px;
+    z-index: -1000;
+    background: linear-gradient(160deg,#aa7ecd, #107896);
+    -webkit-transform-origin: left bottom;
+    transform-origin: left bottom;
+    position: absolute;
+    top: 0;
+    left: 0;
+    -webkit-transform: skew(0deg,-15deg);
+    transform: skew(0deg,-15deg);
+}
+.console-panel{
+  width: 50%;
+  height: 400px;
+  position: absolute;
+  top: 180px; // 330 - 150
+  left: calc(50% - 200px);
+  background: black;
+  color: white;
+  border-radius: .375rem;
+  box-shadow: 5px 5px 25px 0 rgba(46,61,73,.4);
+  p {
+    font-size: 80px;
+    font-weight: 500;
+    text-align: center;
+    padding: 160px 0px;
+    line-height: 80px;
+  }
+}
+
+/* Small Devices, Tablets */
+@media only screen and (max-width : 480px) {
+}
+@media only screen and (max-width : 992px) {
+  .header {
+    height: 450px;
+  }
+  .platform {
+    height: 330px;
+  }
+  .console-panel{
+    height: 200px;
+    left: initial;
+    p {
+      font-size: 30px;
+      font-weight: 500;
+      text-align: center;
+      padding: 85px 0px;
+      line-height: 40px;
+    }
+  }
+}
+.demo{
+  padding: 50px;
+  .demo__heading{
+    text-align: center;
+  }
+  .console{
+    font-family: "Lucida Sans Typewriter", "Lucida Console", Monaco, "Bitstream Vera Sans Mono", monospace;
+    color: black;
+    background-color:white;
+    border: 5px solid #ccc;
+    width: 100%;
+  } 
+}
