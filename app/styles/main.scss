@@ -121,6 +121,12 @@ body{
     font-family: sans-serif;
     margin: 5px 0px 20px 25px;
   }
+  .docs__image{
+    padding-bottom: 30px;
+    img{
+      width: 100%;
+    }
+  }
 }
 @media only screen and (max-width : 480px) {
   .demo{
