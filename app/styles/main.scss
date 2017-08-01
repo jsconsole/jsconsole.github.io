@@ -1,5 +1,5 @@
 *{
-  font-family: 'Orbitron', sans-serif;
+  font-family: sans-serif;
 };
 // bower:scss
 @import "bower_components/bootstrap/scss/bootstrap.scss";
@@ -9,12 +9,28 @@
 body{
   background: whitesmoke;
 }
+.fontly{
+  font-family: 'Orbitron', sans-serif;
+}
 .header{
   height: 660px;
 }
 .footer{
   padding: 30px;
   text-align: center;
+}
+.main-title{
+  font-size: 36px;
+  font-weight: 500;
+  line-height: 1.3em;
+  text-align: center;
+}
+@media only screen and (max-width : 480px) {
+  .main-title{
+    font-size: 30px;
+    font-weight: 500;
+    line-height: 1em;
+  }
 }
 .platform{
   content: "";
@@ -49,9 +65,6 @@ body{
   }
 }
 
-/* Small Devices, Tablets */
-@media only screen and (max-width : 480px) {
-}
 @media only screen and (max-width : 992px) {
   .header {
     height: 450px;
@@ -81,7 +94,7 @@ body{
   }
 }
 .demo{
-  padding: 40px 10px 10px;
+  padding: 50px 50px 0;
   .console{
     font-family: "Lucida Sans Typewriter", "Lucida Console", Monaco, "Bitstream Vera Sans Mono", monospace;
     color: black;
@@ -91,14 +104,34 @@ body{
   } 
 }
 .docs{
-  padding: 10px;
-  *:not(h2) {
+  padding: 0 50px;
+  .docs__body{
+    background: white;
+    padding: 50px;
+    word-break: break-all;
+  }
+  .docs__title{
+    color: #e5853d;
+    font-size: 18px;
     font-family: sans-serif;
   }
-  div{
-    color:#107896;
-    font-size: 20px;
+  .docs__text{
+    color: #107896;
+    font-size: 15px;
+    font-family: sans-serif;
+    margin: 5px 0px 20px 25px;
   }
+}
+@media only screen and (max-width : 480px) {
+  .demo{
+    padding: 10px;
+  }
+  .docs{
+  padding: 10px;
+  .docs__body{
+    padding: 10px;
+  }
+}
 }
 .nav {
   margin: 0;
@@ -126,6 +159,7 @@ body{
         color: white;
         text-decoration: none;
         text-transform: uppercase;
+        font-family: 'Orbitron', sans-serif;
         
         &:hover,
         &.active {

@@ -1,5 +1,11 @@
 .button-container{
     text-align: center;
+    padding: 30px;
+}
+@media only screen and (max-width : 480px) {
+    .button-container{
+        padding: 20px;
+    }   
 }
 .download-button {
     display: inline-block;
@@ -10,7 +16,6 @@
     border: 0px;
     border-radius: 5px;
     margin-top: 10px;
-    margin-bottom: 30px;
     vertical-align: middle;
     -webkit-transform: perspective(1px) translateZ(0);
     transform: perspective(1px) translateZ(0);
