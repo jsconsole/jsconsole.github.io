@@ -1,0 +1,1 @@
+"use strict";$("a[href*=\\#]").on("click",function(t){t.preventDefault(),$("html,body").animate({scrollTop:$(this.hash).offset().top},500)});
