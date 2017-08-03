@@ -1,0 +1,6 @@
+.console-icon{
+    background-image: -webkit-image-set(url(../images/smallIcons.png) 1x, url(../images/smallIcons_2x.png) 2x);
+    background-position: var(--spritesheet-position);
+    display: inline-block;
+    flex-shrink: 0;
+}
