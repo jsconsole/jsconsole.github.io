@@ -111,7 +111,8 @@ var options = {
     contentType: 'html',
     smartBackspace: true,
     backSpeed: 0,
-    backDelay: 700
+    backDelay: 700,
+    loop: true
 }
 new Typed('#js-console-1', Object.assign({}, options, {strings: strings1}));
 new Typed('#js-console-2', Object.assign({}, options, {strings: strings2}));
