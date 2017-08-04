@@ -1,29 +1,29 @@
 .jet-pack {
   display: block;
   font-size: 1rem;
-  right: -80px;
+  right: -60px;
   position: absolute;
   text-align: center;
   top: -60px;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
 }
-@media only screen and (max-width : 992px) {
+@media (min-width : 992px) and (max-width : 1280px) {
+  .jet-pack{
+    z-index: -1;
+    right: 0px;
+    top: 180px;
+  }
+}
+
+@media screen and (max-width : 992px) {
   .jet-pack{
     z-index: -1;
     right: 1%;
     top: -200px;
   }
 }
-@media only screen and (max-width : 1280px) {
-  .jet-pack{
-    z-index: -1;
-    right: -60px;
-    top: -200px;
-  }
-}
-
-@media (max-width: 500px) {
+@media only screen and (max-width: 500px) {
   .jet-pack {
     font-size: .75rem;
   }
