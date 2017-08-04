@@ -9,12 +9,20 @@
           transform: translate(-50%, -50%);
 }
 @media only screen and (max-width : 992px) {
-    .jet-pack{
-      z-index: -1;
-      right: 1%;
-      top: -200px;
-    }
+  .jet-pack{
+    z-index: -1;
+    right: 1%;
+    top: -200px;
+  }
 }
+@media only screen and (max-width : 1280px) {
+  .jet-pack{
+    z-index: -1;
+    right: -60px;
+    top: -200px;
+  }
+}
+
 @media (max-width: 500px) {
   .jet-pack {
     font-size: .75rem;
