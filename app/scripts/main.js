@@ -76,7 +76,7 @@ clear.push(caretIn+ numberString(1) + '<span style=\'color: hsl(1, 80%, 43%) !im
     + caretIn + 'js.clear()' + hr);
 clear.push(align+'<span style=\'color: rgb(128, 128, 128)\'>Console was cleared</span>' + hr
     + getUndefined());
-var docs = caretIn+'js.docs' + hr
+var docs = caretIn+'js.doc' + hr
 +'<p style="color: rgb(16, 120, 150); text-align:center; font-size: 16px; font-weight: 500; line-height: 16px;">JSconsole (A Swiss Knife for JS) </p>'
 +getDocsString('js.load(NAME(String) || URL(String) || NUMBER_FROM_ALIAS(Number) || [NAME, URL, NUMBER_FROM_ALIAS](Array)):')+br
 +customString('Load the latest library from the internal CDN according to to NAME(S). For NUMBER_FROM_ALIAS use js.alias();')+br+br
