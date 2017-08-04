@@ -24,13 +24,7 @@ function getString(str){
 function getDocsString(str){
     return align+'<span style="color: rgb(229, 133, 61); font-size: 12px; font-weight: 500; line-height: 18px;">' + str +'</span>';
 }
-var load = [];
-load.push(caretIn+'js.load('+getString('jquery')+')' + hr
-    + getUndefined() + hr
-    + customString('Loading... jquery with version 3.2.1 from https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js')+hr
-    + customString('Loading completed for jquery'))+hr;
-
-load.push(caretIn+'js.load(['+getString('jquery')+','+getString('moment')+','+getString('https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.17.4/lodash.min.js')+'])' + hr
+var load1 = caretIn+'js.load(['+getString('jquery')+','+getString('moment')+','+getString('https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.17.4/lodash.min.js')+'])' + hr
     + align + numberString(3) + hr
     + getUndefined()+ hr
     + customString('Loading... jquery with version 3.2.1 from https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js')+hr
@@ -38,21 +32,44 @@ load.push(caretIn+'js.load(['+getString('jquery')+','+getString('moment')+','+ge
     + customString('Loading... https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.17.4/lodash.min.js')+hr
     + customString('Loading completed for moment.js')+hr
     + customString('Loading completed for https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.17.4/lodash.min.js')+hr
-    + customString('Loading completed for jquery')+hr);
+    + customString('Loading completed for jquery')+hr;
+var outputLoad = caretIn + '$' + hr
+    + align+ 'ƒ (a,b){return new r.fn.init(a,b)}' + hr
+    + caretIn + 'moment' + hr
+    + align+ 'ƒ a(){return sd.apply(null,arguments)}' + hr
+    + caretIn + '_' + hr
+    + align+ numberString('ƒ')
+var load = [];
+load.push(caretIn+'js.load('+getString('jquery')+')' + hr
+    + getUndefined() + hr
+    + customString('Loading... jquery with version 3.2.1 from https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js')+hr
+    + customString('Loading completed for jquery')+hr
+    + caretIn + '$' + hr
+    + align+ 'ƒ (a,b){return new r.fn.init(a,b)}');
+
+load.push(load1+ outputLoad);
 
 var find = caretIn+'js.find('+getString('lodash')+')' + hr
     + customString('Searching...')+hr
     + getUndefined()+hr
     + customString('Here is the list')+hr
-    + '<img src="images/3.png"> ^200'+br+br;
+    + '<img src="images/2.png"> ^200'+br+br
+    + caretIn+'js.load('+getString('lodash-fp')+')' + hr
+    + getUndefined() + hr
+    + customString('Loading... lodash-fp with version 0.10.4 from https://cdnjs.cloudflare.com/ajax/libs/lodash-fp/0.10.4/lodash-fp.min.js')+hr
+    + customString('Loading completed for lodash-fp')+hr;
 
 var list = caretIn+'js.list()' + hr
     + '<img src="images/3.png"> ^200'+br+br;
     + getUndefined()+hr;
     
 var alias = caretIn+'js.alias()' + hr
-    + '<img src="images/6.png" /> ^200'+br+br;
-    + getUndefined();
+    + '<img src="images/6.png" /> ^200'+br+br
+    + getUndefined() + hr
+    + caretIn+'js.load('+numberString(1)+')' + hr
+    + getUndefined() + hr
+    + customString('Loading... jquery with version 3.2.1 from https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js')+hr
+    + customString('Loading completed for jquery')+hr;
 var clear = [];
 clear.push(caretIn+ numberString(1) + '<span style=\'color: hsl(1, 80%, 43%) !important\'> + </span>' + numberString(2) +hr
     + caretOut + numberString(3)+ hr + '^200'
@@ -89,7 +106,7 @@ var strings2 = [
     find
 ];
 var strings3 = [
-    load[1]+list
+    load1+list
 ];
 var strings4 = [
     clear[0],
