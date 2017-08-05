@@ -7,7 +7,7 @@
 ### [INSTALL EXTENSION](https://jsconsole.github.io)
 
 
-![Screenshot](/app/images/logo.png)
+![Screenshot](/images/logo.png)
 
 ### Features
 
