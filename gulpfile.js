@@ -87,7 +87,8 @@ gulp.task('fonts', () => {
 gulp.task('extras', () => {
   return gulp.src([
     'app/*',
-    '!app/*.html'
+    '!app/*.html',
+    'README.md'
   ], {
     dot: true
   }).pipe(gulp.dest('dist'));
@@ -169,7 +170,7 @@ gulp.task('wiredep', () => {
 
 gulp.task('build', ['lint', 'html', 'images', 'fonts', 'extras'], () => {
   return gulp.src('dist/**/*').pipe($.size({title: 'build', gzip: true}))
-  .pipe(ghPages({ branch: 'master' }));
+  .pipe(ghPages({ branch: 'master', user: { name: 'rachitGulati', email: 'rahitgulati26@gmail.com'} }));
 });
 
 gulp.task('default', () => {
