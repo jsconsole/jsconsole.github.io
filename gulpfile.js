@@ -170,7 +170,7 @@ gulp.task('wiredep', () => {
 
 gulp.task('build', ['lint', 'html', 'images', 'fonts', 'extras'], () => {
   return gulp.src('dist/**/*').pipe($.size({title: 'build', gzip: true}))
-  .pipe(ghPages({ branch: 'master', user: { name: 'rachitGulati', email: 'rahitgulati26@gmail.com'} }));
+  .pipe(ghPages({ branch: 'master', user: { name: 'rachitGulati', email: 'rachitgulati26@gmail.com'} }));
 });
 
 gulp.task('default', () => {
