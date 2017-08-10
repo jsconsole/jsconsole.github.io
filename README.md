@@ -20,6 +20,17 @@
 If you find it useful, you can show your support by sharing it in your social network or by simply letting me know how much you ❤️ it by tweeting to 
 [@squiroid](https://twitter.com/squiroid).
 
+### CONTRIBUTING
+- ### Setup
+
+    - [Fork **jsconsole.github.io**](https://help.github.com/articles/fork-a-repo) and clone it on your system.
+    -  Create a new branch out off `development` for your fix/feature. `git checkout -b new-feature`
+
+- ### Things to remember
+    - Do not fix multiple issues in a single commit. Keep them one thing per commit so that they can be picked easily incase only few commits require to be merged.
+    - Before submitting a patch, rebase your branch on upstream `development` to make life easier for the merger.
+    - **DO NOT** commit library builds (`dist/**`) in your commits.
+
 ### License
 
 MIT Licensed
